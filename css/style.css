@@ -1,0 +1,87 @@
+/* Import Google Fonts - Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --accent-color: #0ea5e9;
+    --accent-hover: #0284c7;
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    --hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Custom Styling */
+.navbar-custom {
+    background: var(--primary-gradient);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.35rem;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.6rem 1.1rem !important;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #38bdf8 !important;
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--hover-shadow);
+}
+
+/* Hero Section */
+.hero-box {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 1px solid #bae6fd;
+    border-radius: 20px;
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background-color: var(--accent-color);
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0.6rem 1.4rem;
+    transition: all 0.25s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--accent-hover);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.35);
+}
+
+/* Footer Styling */
+footer {
+    background: var(--primary-gradient);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
